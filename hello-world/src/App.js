@@ -9,9 +9,17 @@ function App (){
 
   return (
     <div className="App">
-      <Greet />
-      <Welcome />
-      <Hello />
+      <Greet name="Bruce" heroName="Badman">
+        <p>This is Children Props</p>
+        </Greet>
+      <Greet name="Clark" heroName="Superman">
+        <button>Action</button>
+        </Greet>
+      <Greet name="Diana" heroName="Wonder Woman" />
+      
+      <Welcome name="Bruce" heroName="Badman" />
+      <Welcome name="Clark" heroName="Superman" />
+      {/* <Hello /> */}
     </div>
   );
   }
