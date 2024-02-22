@@ -8,34 +8,34 @@ import Message from './component/message'
 import { Component } from 'react';
 
 
-class App extends Component {
-  render(){
-    return(
-      <div className="App">
-        <Message />
-      </div>
-    )
-  }
-}
+// class App extends Component {
+//   render(){
+//     return(
+//       <div className="App">
+//         <Message />
+//       </div>
+//     )
+//   }
+// }
 
-// function App (){
+function App (){
 
-//   return (
-//     <div className="App">
-//       <Greet name="Bruce" heroName="Badman">
-//         <p>This is Children Props</p>
-//         </Greet>
-//       <Greet name="Clark" heroName="Superman">
-//         <button>Action</button>
-//         </Greet>
-//       <Greet name="Diana" heroName="Wonder Woman" />
+  return (
+    <div className="App">
+      <Greet name="Bruce" heroName="Badman">
+        <p>This is Children Props</p>
+        </Greet>
+      <Greet name="Clark" heroName="Superman">
+        <button>Action</button>
+        </Greet>
+      <Greet name="Diana" heroName="Wonder Woman" />
 
-//       <Welcome name="Bruce" heroName="Badman" />
-//       <Welcome name="Clark" heroName="Superman" />
+      <Welcome name="Bruce" heroName="Badman" />
+      <Welcome name="Clark" heroName="Superman" />
       {/* <Hello /> */}
-    // </div>
-  // );
-  // }
+     </div>
+  );
+  }
 
 export default App;
  
