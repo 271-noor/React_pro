@@ -5,37 +5,42 @@ import  Greet  from './component/Greet'
 import  Welcome  from './component/welcome'
 import Hello from './component/Hello'
 import Message from './component/message'
-import { Component } from 'react';
+import  Counter  from './component/counter'
+import FunctionClick from './component/FunctionClick'
+import ClassClick from './component/ClassClick'
+import EventBind from './component/EventBind'
+import ParentComponent from './component/ParentComponent'
+import UserGreeting from './component/UserGreeting'
+ 
 
-
-// class App extends Component {
-//   render(){
-//     return(
-//       <div className="App">
-//         <Message />
-//       </div>
-//     )
-//   }
-// }
 
 function App (){
 
   return (
     <div className="App">
-      <Greet name="Bruce" heroName="Badman">
-        <p>This is Children Props</p>
-        </Greet>
-      <Greet name="Clark" heroName="Superman">
-        <button>Action</button>
-        </Greet>
-      <Greet name="Diana" heroName="Wonder Woman" />
+          <UserGreeting />
+          {/* <ParentComponent /> */}
+        {/* <EventBind /> */}
+        {/* <ClassClick /> */}
+      {/* <FunctionClick /> */}
+        {/* <Counter /> */}
+        {/* <Message /> */}
 
-      <Welcome name="Bruce" heroName="Badman" />
-      <Welcome name="Clark" heroName="Superman" />
-      {/* <Hello /> */}
-     </div>
-  );
+        {/* <Greet name="Bruce" heroName="Badman" >
+         <p>This is Children Props</p>
+        </Greet> */}
+      {/* <Greet name="Clark" heroName="Superman">
+        <button>Action</button>
+        </Greet> */}
+       {/* <Greet name="Diana" heroName="Wonder Woman" /> */}
+        {/* <Welcome name="Bruce" heroName="Badman" /> */}
+       {/* <Welcome name="Clark" heroName="Superman" /> */}
+       {/* <Hello /> */}
+
+      </div>
+  )
   }
+
 
 export default App;
  
