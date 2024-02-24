@@ -4,25 +4,37 @@ import React from 'react'
 
 function NameList() {
     // create array of Component
-    const names = ['Bruce', 'Clasrk', 'Diana']
+    const persons = [
+      {
+        id: 1,
+        name: 'Bruce',
+        age: 30,
+        skill: 'React'
+      },
+      {
+        id: 2,
+        name: 'Clark',
+        age: 25,
+        skill: 'Angular'
+      },
+      {
+        id: 3,
+        name: 'Diana',
+        age: 28,
+        skill: 'Vue'
+      },
+    ]
 
     // declare a new constant Const nameList and assign the result of the Map Operation
-    const nameList = names.map(name => <h2>{name}</h2>)
+    const personList = persons.map(person => <Person person={person} />
+    )
   return (
     <div>
-
         {/*(After map Operation..)
          then in the return statement. I'll simply include the name list in the jsx */}
             {
-                nameList
+                personList
             }
-
-
-        {/* Using Map() Method */}
-        {/* {
-            names.map(name => <h2>{name}</h2>)
-        } */}
-        
     </div>
   )
 }
